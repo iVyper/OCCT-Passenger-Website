@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Clear Cache for Schedule Change Updates to Load -->
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downtown Center-Leroy Street Shuttle</title>
+  <link rel="stylesheet" href="../../stylesheets/style.css">
+	<!-- Routes and Schedules Page Separate CSS -->
+	<link rel="stylesheet" href="../../stylesheets/route.css">
+	<!-- Bootstrap External Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  
+	<!-- Desktop Navigation Bar-->
+	<header class="header">
+    <div class ="navbar">
+      <div class="occtlogo">
+        <a href="../../index.html">
+          <img src="../../logo/occtlogo.png" alt="OCC Transport Logo">
+        </a>
+      </div>
+	  <ul class="pagelinks">
+	    <li><a href="../routeschedule.html">Routes and Schedules</a></li>
+	    <li><a href="../employment.html">Employment</a></li>
+	    <li><a href="../passtips.html">Passenger Tips</a></li>
+	    <li><a href="../about.html">About</a></li>
+	    <li><a href="../contactus.html">Contact Us</a></li>
+	  </ul>
+      
+    <div class="sociallogos-container">
+    	<a href="https://twitter.com/OCCT" class="social">
+				<img src="../../logo/twitterlogo.png" alt="OCCT Twitter">
+			</a>
+      <a href="https://www.instagram.com/buocct/?hl=en" class="social">
+      	<img src="../../logo/iglogo.png" alt="OCCT Instagram">
+			</a>
+		</div>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+		</div>
+	</div>  
+		
+	<!-- Mobile Navigation Bar-->  
+   	<div class="navbar-responsive">
+      <ul class="pagelinks">
+		    <li><a href="../routeschedule.html">Routes and Schedules</a></li>
+		    <li><a href="../employment.html">Employment</a></li>
+		    <li><a href="../passtips.html">Passenger Tips</a></li>
+		    <li><a href="../about.html">About</a></li>
+		    <li><a href="../contactus.html">Contact Us</a></li>
+      </ul>
+      <div class="sociallogos-container">
+        <a href="https://twitter.com/OCCT" class="social" target="_blank">
+          <img src="../../logo/twitterlogo.png" alt="OCCT Twitter">
+        </a>
+        <a href="https://www.instagram.com/buocct/?hl=en" class="social" target="_blank">
+          <img src="../../logo/iglogo.png" alt="OCCT Instagram">
+        </a>
+      </div>
+    </div>
+  </header>	
+
+	
+	<!-- Banner Image-->
+	<div class="banner">
+	  <img src="../../photos/fleetpic1.jpeg" alt="OCCT Fleet Picture">
+	</div>
+	
+	<!-- Page Contents-->	
+		<div class="route-container">
+			
+			<div class="route-box dcl">
+        <div class="routeDetails">
+          	<h1>DCL</h1>
+        </div>
+      </div>
+			
+			<div class="routeheading">
+				<h1>
+					Downtown Center-Leroy Street Shuttle
+				</h1>
+			</div>
+			
+			<div class="info">
+				<h2>
+					Reminder: 
+				</h2>
+				<h3>
+					Outbound: 
+				</h3>
+				<p>
+					The bus leaves campus and travels through Bunn Hill Road in Vestal, Riverside Drive in Johnson City & Binghamton, and Leroy Street in Westside Binghamton enroute to the Downtown Center.
+				</p>
+				<h3>
+					Inbound: 
+				</h3>
+				<p>
+					The bus leaves the Downtown Center and travels through Leroy Street in Westside Binghamton and Riverside Drive in Binghamton & Johnson City enroute to the Main Campus.
+				</p>
+			</div>
+			
+			<div class="out-in-bound-tabs">
+				
+				<button class="tablink" onclick="openPage('Outbound', this, '#4997d0')"id="defaultOpen">Outbound to the UDC</button>
+				<button class="tablink" onclick="openPage('Inbound', this, '#4997d0')">Inbound to Campus</button>
+				
+				<!-- Outbound Tab-->
+				<div id="Outbound" class="tabcontent">
+				  <h3>Downtown Center-Leroy Street Outbound</h3>
+				  <p>Outbound to the UDC</p>
+					
+					<div class="routemaps">
+						
+					</div>
+				</div>
+				
+				<!-- Inbound Tab-->
+				<div id="Inbound" class="tabcontent">
+				  <h3>Downtown Center-Leroy Street Inbound</h3>
+				  <p>Inbound to Campus!</p> 
+					
+					<div class="routemaps">
+						
+					</div>
+				</div>
+				
+			</div>
+		
+		
+		<!-- ending div for entire homepage-->	
+		</div>
+
+	
+	<!-- Footer-->
+  <footer class="footer">
+    <div class="footercontainer">
+      <p class="p2">
+				<span id="ftDate"></span> &copy; OCC Transport
+			</p>
+    </div>
+  </footer>
+
+<script src="../../scripts.js"></script>				
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+/* Set rules and parameters for the Contact Us page */
+.contus-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  gap: 20px;
+}
+
+/* Set styles for the Service Updates Left-Side Section */
+.contus-container .leftside {
+  width: 50%;
+  border-top: 3px solid #4997d0;
+  margin-top: 10px;
+}
+
+.contus-container .leftside .title h1 {
+  font-size: 25px;
+  color: #4997d0;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+  padding: 0.5rem;
+}
+
+.contus-container .leftside .info {
+  font-size: 15px;
+	color: #000000;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	line-height: 1.5;
+}
+
+/* Set styles for the Service Updates Container */
+.contus-container .leftside .serviceupdates {
+  padding: 0.5rem;
+}
+
+/* Set styles for the Service Updates Right-Side Section */
+.contus-container .rightside {
+  width: 50%;
+  top: 10%;
+}
+
+.contus-container .rightside .space {
+  height: 10px;
+  width: 100%;
+  background: #edebeb;
+}
+
+.contus-container .rightside .divided-item {
+  border-top: 3px solid #4997d0;
+  background: #edebeb;
+  padding: 0.5rem 0.7rem;
+}
+
+.contus-container .rightside .divided-item.white {
+  background: #ffffff;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.contus-container .rightside .divided-item .title h1 {
+  font-size: 25px;
+  color: #4997d0;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.contus-container .rightside .divided-item .info {
+  padding: 0.25rem 0rem;
+}
+
+.contus-container .rightside .divided-item .info h2 {
+  font-size: 18px;
+  color: black;
+	font-weight: bold;
+	letter-spacing: 1.15px;
+}
+
+.contus-container .rightside .divided-item .info p {
+  font-size: 15px;
+  color: black;
+	line-height: 1.5;
+	padding-top: 0.25rem;
+}
+
+.contus-container .rightside .divided-item .info a {
+  font-size: 15px;
+  color: #4997d0;
+	line-height: 1.5;
+	padding-top: 0.25rem;
+}
+
+/* Contact Us Form */
+.contactus-form{
+	padding: 2rem 2rem;
+}
+
+form {
+	padding: 1rem 2rem;
+	max-width: 100%;
+	line-height: 1.5;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.form-element {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.contactus-form p{
+	color: red;
+	font-size: 15px;
+	padding-bottom: .25rem;
+}
+
+.form-element input{
+	font-size: 13px;
+}
+
+label {
+  font-size: 15px;
+  color: #000000;
+	padding-bottom: 0.25rem;
+}
+
+input, textarea {
+	border: none;
+	border-bottom: 2px solid #4997d0;
+	line-height: 2;
+	padding: 5px;
+}
+
+
+form button{
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background-color: #4997d0;
+	border-radius: 5px;
+	border: none;
+	font-size: 15px;
+	
+}
+
+/* About Responsive Section  */
+@media screen and (max-width: 928px) {
+  .contus-container {
+    flex-direction: column;
+  }
+
+  .contus-container .leftside {
+    width: 100%;
+  }
+
+  .contus-container .rightside {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contus-container .leftside .title h1 {
+    font-size: 22px;
+  }
+
+  .contus-container .rightside .divided-item .title h1 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,397 @@
+/* Set default margin and padding */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Set Page Styling */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+body {
+  font-family: 'Arial';
+  overflow-x: hidden;
+}
+
+/* Set Heading Text Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+/* Set styles for the Desktop Header & Navigation Bar */
+header {
+  position: sticky;
+  top: 0;
+  padding: 0 2rem;
+  background-color: #4997d0;
+}
+
+.header .navbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar .occtlogo img {
+  width: 120px;
+}
+
+.header .navbar .pagelinks {
+  display: flex;
+  margin-bottom: 0 !important;
+}
+.header .navbar .pagelinks li {
+  border-left: 1px solid #ffffff;
+  padding: 0 1rem;
+}
+
+.header .navbar .pagelinks li:first-child {
+  border-left: none;
+}
+
+.header .navbar .pagelinks a {
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+	letter-spacing: 1px;
+}
+
+.header .navbar .pagelinks a:hover {
+  color: #edebeb;
+}
+
+/* Set styles for toggling between Mobile & Desktop */
+.header .navbar .toggle_btn {
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  font-size: 1.5rem;
+}
+
+.header .sociallogos-container .social img {
+  width: 40px;
+  height: 40px;
+}
+
+.header .social:hover {
+  color: #ffffff;
+  scale: 1.05;
+}
+
+.header .social:active {
+  scale: 0.95;
+}
+
+/* Set styles for the Mobile Header & Navigation Bar */
+.header .navbar-responsive {
+  display: none;
+  right: 2rem;
+  position: absolute;
+  background: #4997d0;
+  backdrop-filter: blur(15px);
+  top: 48px;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.header .navbar-responsive .pagelinks {
+  padding-left: 0 !important;
+  border-top: 1px solid #ffffff;
+}
+
+.header .navbar-responsive .pagelinks a {
+  font-size: 22px;
+	padding: .5rem;
+}
+
+.header .navbar-responsive li {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .navbar-responsive.navShow {
+  height: 40vh;
+	overflow-y: scroll;
+}
+
+.header .navbar-responsive .social {
+  width: 100%;
+	padding: .25rem;
+}
+
+.header .navbar-responsive .sociallogos-container {
+  width: 100px;
+  margin: auto;
+}
+
+
+@media(max-width: 1040px) {
+  .header .navbar {
+    height: 48px;
+  }
+
+  .header .navbar .pagelinks,
+  .header .navbar .social {
+    display: none;
+  }
+
+  .occtlogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header .navbar .toggle_btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+
+  }
+
+  .header .navbar-responsive {
+    display: block;
+  }
+
+}
+
+@media(max-width:576px) {
+  .header .navbar-responsive {
+    width: 100%;
+  }
+}
+
+
+/* Set styles for the Social Media Links in the Nav Bar */
+.header .sociallogos-container .social img {
+  width: 40px;
+  height: 40px;
+}
+
+.header .social:hover {
+  color: #ffffff;
+  scale: 1.05;
+}
+
+.header .social:active {
+  scale: 0.95;
+}
+
+/* Set styles for the Banner Image */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+	width: 100vw;
+}
+
+/* Set styles for the main content */
+.homepage {
+	display: inline-block;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Set styles for the Content Section */
+.pagecontents {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  gap: 20px;
+}
+
+/* Set styles for the Service Updates Left-Side Section */
+.pagecontents .leftside {
+  width: 50%;
+  border-top: 3px solid #4997d0;
+  margin-top: 10px;
+}
+
+.pagecontents .leftside .title h1 {
+  font-size: 25px;
+  color: #4997d0;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+  padding: 0.5rem;
+}
+
+.pagecontents .leftside .info {
+  font-size: 15px;
+	color: #000000;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	line-height: 1.5;
+}
+
+/* Set styles for the Service Updates Container */
+.pagecontents .leftside .serviceupdates {
+  padding: 0.5rem;
+}
+
+/* Set styles for the Service Updates Right-Side Section */
+.pagecontents .rightside {
+  width: 50%;
+  top: 10%;
+}
+
+.pagecontents .rightside .space {
+  height: 10px;
+  width: 100%;
+  background: #edebeb;
+}
+
+.pagecontents .rightside .divided-item {
+  border-top: 3px solid #4997d0;
+  background: #edebeb;
+  padding: 0.5rem 0.7rem;
+}
+
+.pagecontents .rightside .divided-item .title h1 {
+  font-size: 25px;
+  color: #4997d0;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.pagecontents .rightside .divided-item .info {
+  padding-top: 0.5rem;
+}
+
+.pagecontents .rightside .divided-item .info p {
+  font-size: 15px;
+  color: #000000;
+	line-height: 1.5;
+}
+
+.pagecontents .rightside .divided-item .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+	padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pagecontents .rightside .divided-item .button-container .button-eta {
+  width: 50%;
+  text-align: center;
+}
+
+.pagecontents .rightside .divided-item .button-container a {
+  display: block;
+  background: #4997d0;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.pagecontents .rightside .divided-item.white {
+  background: #ffffff;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pagecontents .rightside .divided-item .singlebutton {
+  text-align: center;
+	width: 100%;
+}
+
+/* Set Parameter Restrictions for Smaller Screens */
+@media screen and (max-width: 992px) {
+  .pagecontents .rightside .divided-item .button-container a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 928px) {
+  .pagecontents {
+    flex-direction: column;
+  }
+
+  .pagecontents .leftside {
+    width: 100%;
+  }
+
+  .pagecontents .rightside {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pagecontents .leftside .title h1 {
+    font-size: 22px;
+  }
+
+  .pagecontents .rightside .divided-item .title h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 438px) {
+  .pagecontents .rightside .divided-item .button-container a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .pagecontents .rightside .divided-item .button-container {
+    flex-direction: column;
+  }
+
+  .pagecontents .rightside .divided-item .button-container .button-eta {
+    width: 100%;
+  }
+
+  .pagecontents .rightside .divided-item .button-container a {
+    font-size: 15px;
+  }
+}
+
+
+/* Footer */
+.footer .footercontainer {
+  background: #4997d0;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 20px;
+}
+
+.p2 {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 0 !important;
+}

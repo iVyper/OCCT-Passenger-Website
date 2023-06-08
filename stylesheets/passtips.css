@@ -1,0 +1,82 @@
+/* Set rules and parameters for the Passenger Tips page */
+.pt-container {
+  padding: 0 2rem;
+}
+
+.pt-container .ptheading {
+  padding-top: 1rem;
+  border-bottom: 3px solid #4997d0;
+}
+
+.pt-container .ptheading h1 {
+  font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 2px;
+  color: #4997d0;
+}
+
+.pt-container .info {
+  padding: 0.5rem 0rem;
+}
+
+.pt-container .info p {
+  color: #000000;
+  font-size: 16px;
+	line-height: 1.5;
+}
+
+.pt-container .info a {
+	color: #4997d0;
+	text-decoration: underline;
+  font-size: 16px;
+}
+
+.pt-container .info a:hover {
+	color: #edebeb;
+	text-decoration: underline;
+  font-size: 16px;
+}
+
+.pt-container .divided-item {
+  background: #ffffff;
+  padding: 0.25rem 0rem;
+}
+
+.pt-container .divided-item .title h1 {
+  font-size: 25px;
+  color: #4997d0;
+	font-weight: bold;
+	letter-spacing: 1px;
+	
+}
+
+.pt-container .divided-item .info ul {
+  padding: 0rem 1rem;
+}
+
+.pt-container .divided-item .info li {
+		font-size: 16px;
+		color: #000000;
+    list-style-type: square;
+		line-height: 1.5;
+		padding: .25rem;
+
+
+/* Passenger Tips Responsive Section  */
+@media screen and (max-width: 500px) {
+  .pt-container .ptheading h1 {
+    font-size: 30px;
+  }
+
+  .pt-container .info p {
+    font-size: 15px;
+  }
+	
+	.pt-container .divided-item .title h1 {
+	  font-size: 22px;
+	}
+	
+	.pt-container .divided-item .info li {
+	  font-size: 14px;
+	}
+}

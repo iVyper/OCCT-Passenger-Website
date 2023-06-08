@@ -1,0 +1,75 @@
+/* Set rules and parameters for the About page */
+.about-container {
+  padding: 0 2rem;
+}
+
+.about-container .aboutheading {
+  padding-top: 1rem;
+  border-bottom: 3px solid #4997d0;
+}
+
+.about-container .aboutheading h1 {
+  font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 2px;
+  color: #4997d0;
+}
+
+.about-container .info {
+  padding: 0.5rem 0rem;
+}
+
+.about-container .info p {
+  color: #000000;
+  font-size: 17px;
+	line-height: 1.5;
+}
+
+.about-container .divided-item {
+  background: #edebeb;
+  padding: 0.5rem 1rem;
+}
+
+.about-container .divided-item .title h1 {
+  font-size: 25px;
+  color: #4997d0;
+	font-weight: bold;
+	letter-spacing: 2px;
+	
+}
+
+.about-container .divided-item .info {
+  padding: 0.25rem 0rem;
+}
+
+.about-container .divided-item .info p {
+  font-size: 16px;
+  color: #000000;
+	line-height: 1.5;
+	padding-bottom: 1.5px;
+}
+
+.about-container .divided-item.white {
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+
+/* About Responsive Section  */
+@media screen and (max-width: 500px) {
+  .about-container .aboutheading h1 {
+    font-size: 30px;
+  }
+
+  .about-container .info p {
+    font-size: 15px;
+  }
+	
+	.about-container .divided-item .title h1 {
+	  font-size: 22px;
+	}
+	
+	.about-container .divided-item .info p {
+	  font-size: 14px;
+	}
+}

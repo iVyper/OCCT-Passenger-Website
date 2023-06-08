@@ -1,0 +1,244 @@
+/* Set rules and parameters for the Passenger Tips page */
+.rs-container {
+  padding: 0 2rem;
+}
+
+.rs-container .rsheading {
+  padding-top: 1rem;
+  border-bottom: 3px solid #4997d0;
+}
+
+.rs-container .rsheading h1 {
+  font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 2px;
+  color: #4997d0;
+}
+
+.rs-container .info {
+  padding: 0.5rem 0rem;
+}
+
+.rs-container .info p {
+  color: #000000;
+  font-size: 16px;
+	line-height: 1.5;
+	padding-bottom: 0.25rem;
+}
+
+.rs-container .info p.importantinfo {
+  color: red;
+  font-weight: bold;
+}
+
+/* Set rules and dimensions for Route Buttons */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+	/* If more than 12 routes, increase from 3 to 4 rows. */
+  grid-template-rows: repeat(3, 1fr);
+  gap: 40px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #ccc;
+  padding: 0;
+	margin: 0;
+  border-radius: 12px;
+  min-height: 200px;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.gridDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+	padding: 20px;
+}
+
+
+
+.gridDetails h1 {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+.gridDetails p {
+	font-size: 1rem;
+}
+
+.grid-item a{
+	color: black;
+}
+
+.col1 {
+  background-color: #89cff0;
+  color: black;
+	border: 4px solid #89cff0;
+	
+}
+.col1:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #89cff0;
+}
+
+.col2 {
+  background-color: #d6fffe;
+  color: black;
+	border: 4px solid #d6fffe;
+}
+.col2:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #d6fffe;
+}
+
+.col3 {
+  background-color: #ff6961;
+  color: black;
+	border: 4px solid #ff6961;
+}
+.col3:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #ff6961;
+}
+
+.col4 {
+  background-color: #ff9899;
+  color: black;
+	border: 4px solid #ff9899;
+}
+.col4:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #ff9899;
+}
+
+.col5 {
+  background-color: #ff964f;
+  color: black;
+	border: 4px solid #ff964f;
+}
+.col5:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #ff964f;
+}
+
+.col6 {
+  background-color: #77dd77;
+  color: black;
+	border: 4px solid #77dd77;
+}
+.col6:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #77dd77;
+}
+
+.col7 {
+  background-color: #ca9bf7;
+  color: black;
+	border: 4px solid #ca9bf7;
+}
+.col7:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #ca9bf7;
+}
+
+.col8 {
+  background-color: #bdb0d0;
+  color: black;
+	border: 4px solid #bdb0d0;
+}
+.col8:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #bdb0d0;
+}
+
+.col9 {
+  background-color: #fdfd96;
+  color: black;
+	border: 4px solid #fdfd96;
+}
+.col9:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #fdfd96;
+}
+
+.col10 {
+  background-color: #aaf0d1;
+  color: black;
+	border: 4px solid #aaf0d1;
+}
+.col10:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #aaf0d1;
+}
+
+/* Summer RES-ITC-UC
+.col11 {
+  background-color: #009480;
+  color: white;
+	border: 4px solid #009480;
+}
+.col11:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #009480;
+}
+*/
+
+/* Future DS
+.col12 {
+  background-color: #009480;
+  color: white;
+	border: 4px solid #009480;
+}
+.col12:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #009480;
+}
+*/
+
+
+/* Passenger Tips Responsive Section  */
+@media screen and (max-width: 1125px) {
+	.grid-container {
+  	grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 750px) {
+  .rs-container .rsheading h1 {
+    font-size: 30px;
+  }
+
+  .rs-container .info p {
+    font-size: 15px;
+  }
+	
+	.rs-container .divided-item .title h1 {
+	  font-size: 22px;
+	}
+	
+	.rs-container .divided-item .info li {
+	  font-size: 14px;
+	}
+	
+	.grid-container {
+  	grid-template-columns: repeat(1, 1fr);
+	}
+	.grid-item {
+ 		min-height: 150px;
+	}
+}

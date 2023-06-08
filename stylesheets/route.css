@@ -1,0 +1,135 @@
+.route-container {
+  padding: 1rem 2rem;
+}
+
+.route-box {
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 12px;
+  height: 45px;
+	width: 75px;
+  box-sizing: border-box;
+}
+
+.routeDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.routeDetails h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.route-container .routeheading {
+  padding-top: 1rem;
+  border-bottom: 3px solid #4997d0;
+}
+
+.route-container .routeheading h1 {
+  font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 2px;
+  color: #4997d0;
+}
+
+.route-container .info {
+  padding: 0.5rem 0rem;
+}
+
+.route-container .info h2 {
+  font-size: 20px;
+	font-weight: bold;
+  color: red;
+	line-height: 1.5;
+}
+
+.route-container .info h3 {
+  color: #000000;
+  font-size: 16px;
+	line-height: 1.5;
+	font-weight: bold;
+}
+
+.route-container .info p {
+  color: #000000;
+  font-size: 16px;
+	line-height: 1.5;
+}
+
+.out-in-bound-tabs {
+	width: 100%;
+	padding: 1rem 0rem;
+}
+
+.routemaps {
+	display: flex;
+	justify-content: center;
+}
+
+/* Tab Section */
+.tablink {
+  background-color: #edebeb;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 1rem 4rem;
+  height: 100%;
+}
+
+
+
+/* Route Designators */
+.ws {
+  background-color: #89cff0;
+  color: black;
+	border: 4px solid #89cff0;
+}
+	
+.ms {
+	background-color: #d6fffe;
+	color: black;
+	border: 4px solid #d6fffe;
+}
+
+.dcl {
+	background-color: #ff6961;
+	color: black;
+	border: 4px solid #ff6961;
+}
+
+.lrs {
+	background-color: #ff9899;
+	color: black;
+	border: 4px solid #ff9899;
+}
+
+
+
+@media screen and (max-width: 750px) {
+	.tablink {
+	  font-size: 18px;
+	}
+	
+	.tabcontent {
+	  padding: 0.5rem 1rem;
+	}
+	
+}
