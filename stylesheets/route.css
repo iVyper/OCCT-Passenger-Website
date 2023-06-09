@@ -47,8 +47,8 @@
 }
 
 .route-container .info h3 {
-  color: #000000;
-  font-size: 16px;
+  color: #4997d0;
+  font-size: 18px;
 	line-height: 1.5;
 	font-weight: bold;
 }
@@ -67,6 +67,19 @@
 .routemaps {
 	display: flex;
 	justify-content: center;
+	padding: 1rem 0rem;
+}
+
+.routeschedules {
+	display: flex;
+	justify-content: center;
+	padding: 1rem 0rem;	
+}
+
+.routestops {
+	display: flex;
+	justify-content: center;
+	padding: 1rem 0rem;	
 }
 
 /* Tab Section */
