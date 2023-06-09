@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/iVyperde/occt.ivyper.dev/
-    - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home/ivyperde/occt.ivyper.dev/
+    - /bin/cp -R /home/ivyperde/OCCT-Passenger-Website $DEPLOYPATH
